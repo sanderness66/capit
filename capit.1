@@ -1,16 +1,29 @@
-.TH capit 1 15-JUL-2021 "Kozmix Go"
+.TH capit 1 27-JUN-2022 "Kozmix Go"
 
 .SH NAME
 capit \- capitalise from stdin to stdout
 
 .SH SYNOPSIS
-capit [-L lang]
+.B capit
+[\-u \-l \-c ] [-L lang]
 
 .SH DESCRIPTION
 .B capit
-reads lines from stdin and outputs them capitalised to stdout.
+reads lines from stdin and outputs them to stdout with capitalisation
+changed as follows:
 
-There is one optional option:
+.TP
+.B \-u
+change all characters to uppercase
+.TP
+.B \-l
+change all characters to lowercase
+.TP
+.B \-c
+capitalise all words (the default)
+
+.P
+There is one additional optional option:
 
 .TP
 .B \-L lang
